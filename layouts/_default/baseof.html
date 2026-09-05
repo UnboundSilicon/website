@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{ site.Params.description }}">
+    <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+    {{ with resources.Get "css/main.css" | minify }}
+      <link rel="stylesheet" href="{{ .RelPermalink }}">
+    {{ end }}
+  </head>
+  <body>
+    <header>
+      <a href="{{ site.Home.RelPermalink }}">{{ site.Title }}</a>
+      <nav>
+        {{ range site.Menus.main }}
+          <a href="{{ .URL }}">{{ .Name }}</a>
+        {{ end }}
+      </nav>
+    </header>
+
+    <main>
+      {{ block "main" . }}{{ end }}
+    </main>
+
+    <footer>
+      <p>&copy; {{ now.Year }} {{ site.Title }}</p>
+      <p>
+        Except where otherwise noted, original written content is licensed
+        under
+        <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.
+      </p>
+    </footer>
+  </body>
+</html>

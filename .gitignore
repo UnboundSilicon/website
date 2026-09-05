@@ -1,0 +1,11 @@
+# Generated site output
+/public/
+
+# Generated resource cache
+/resources/_gen/
+
+# Hugo development-server lock file
+/.hugo_build.lock
+
+# macOS Finder metadata
+.DS_Store

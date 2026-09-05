@@ -1,0 +1,16 @@
+baseURL = 'https://unboundsilicon.com/'
+locale = 'en-us'
+title = 'Unbound Silicon'
+
+[params]
+  description = 'Platform-independent embedded hardware and device drivers.'
+
+[[menus.main]]
+  name = 'Projects'
+  pageRef = '/projects'
+  weight = 10
+
+[[menus.main]]
+  name = 'Posts'
+  pageRef = '/posts'
+  weight = 20
