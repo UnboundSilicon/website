@@ -1,0 +1,46 @@
+{{ define "main" }}
+  <article>
+    <h1>{{ .Title }}</h1>
+    {{ .Content }}
+
+    {{ with .Params.driver_id }}
+      {{ $driverID := . }}
+      {{ $projects := where (where site.RegularPages "Section" "projects") "Params.drivers" "intersect" (slice $driverID) }}
+      {{ $examples := where (where site.RegularPages "Section" "examples") "Params.drivers" "intersect" (slice $driverID) }}
+      {{ $articles := where (where site.RegularPages "Section" "articles") "Params.drivers" "intersect" (slice $driverID) }}
+
+      {{ with $projects }}
+        <section>
+          <h2>Projects Using This Driver</h2>
+          <ul>
+            {{ range . }}
+              <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+            {{ end }}
+          </ul>
+        </section>
+      {{ end }}
+
+      {{ with $examples }}
+        <section>
+          <h2>Examples</h2>
+          <ul>
+            {{ range . }}
+              <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+            {{ end }}
+          </ul>
+        </section>
+      {{ end }}
+
+      {{ with $articles }}
+        <section>
+          <h2>Related Articles</h2>
+          <ul>
+            {{ range . }}
+              <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+            {{ end }}
+          </ul>
+        </section>
+      {{ end }}
+    {{ end }}
+  </article>
+{{ end }}

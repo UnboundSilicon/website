@@ -6,11 +6,26 @@ title = 'Unbound Silicon'
   description = 'Platform-independent embedded hardware and device drivers.'
 
 [[menus.main]]
-  name = 'Projects'
-  pageRef = '/projects'
+  name = 'Drivers'
+  pageRef = '/drivers'
   weight = 10
 
 [[menus.main]]
-  name = 'Posts'
-  pageRef = '/posts'
+  name = 'Projects'
+  pageRef = '/projects'
   weight = 20
+
+[[menus.main]]
+  name = 'Examples'
+  pageRef = '/examples'
+  weight = 30
+
+[[menus.main]]
+  name = 'Articles'
+  pageRef = '/articles'
+  weight = 40
+
+[[menus.main]]
+  name = 'About'
+  pageRef = '/about'
+  weight = 50
