@@ -33,6 +33,5 @@ The hardware abstraction layer allows the RFM12 driver to be used across differe
 
 - **Source Code** — [UnboundSilicon/rfm12](https://github.com/UnboundSilicon/rfm12)
 - **Documentation** — [link to be added]
-- **Examples** — [link to be added]
-- **Datasheet** — [link to be added]
-- **Manufacturer Example Code** — [link to be added]
+- **Datasheet** — [RFM12B.pdf](https://github.com/UnboundSilicon/rfm12/blob/main/datasheets/RFM12B.pdf)
+- **Manufacturer Example Code** — [RFM12B_code.pdf](https://github.com/UnboundSilicon/rfm12/blob/main/datasheets/RFM12B_code.pdf)
