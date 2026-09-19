@@ -1,6 +1,7 @@
 +++
 title = 'RFM12 / RFM12B'
 driver_id = 'rfm12'
+show_examples = false
 +++
 
 A portable C driver for the HopeRF RFM12 and RFM12B ISM-band transceivers.
@@ -33,5 +34,6 @@ The hardware abstraction layer allows the RFM12 driver to be used across differe
 
 - **Source Code** — [UnboundSilicon/rfm12](https://github.com/UnboundSilicon/rfm12)
 - **Documentation** — [link to be added]
+- **Example Driver Code** — [RFM12 Driver Ping-Pong Example](https://github.com/UnboundSilicon/rfm12/tree/main/examples/ping-pong)
 - **Datasheet** — [RFM12B.pdf](https://github.com/UnboundSilicon/rfm12/blob/main/datasheets/RFM12B.pdf)
 - **Manufacturer Example Code** — [RFM12B_code.pdf](https://github.com/UnboundSilicon/rfm12/blob/main/datasheets/RFM12B_code.pdf)

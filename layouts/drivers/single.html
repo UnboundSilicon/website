@@ -20,15 +20,17 @@
         </section>
       {{ end }}
 
-      {{ with $examples }}
-        <section>
-          <h2>Examples</h2>
-          <ul>
-            {{ range . }}
-              <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
-            {{ end }}
-          </ul>
-        </section>
+      {{ if ne $.Params.show_examples false }}
+        {{ with $examples }}
+          <section>
+            <h2>Examples</h2>
+            <ul>
+              {{ range . }}
+                <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+              {{ end }}
+            </ul>
+          </section>
+        {{ end }}
       {{ end }}
 
       {{ with $articles }}
