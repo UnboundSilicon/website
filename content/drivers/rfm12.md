@@ -1,7 +1,6 @@
 +++
 title = 'RFM12 / RFM12B'
 driver_id = 'rfm12'
-show_examples = false
 +++
 
 A portable C driver for the HopeRF RFM12 and RFM12B ISM-band transceivers.

@@ -36,10 +36,6 @@ Placeholder source information.
 
 Placeholder documentation information.
 
-## Examples
-
-Placeholder example information.
-
 ## Projects using this driver
 
 Placeholder project information.
